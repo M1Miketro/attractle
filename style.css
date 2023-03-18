@@ -1,0 +1,282 @@
+:root {
+  touch-action: pan-x pan-y;
+  height: 100% 
+}
+
+body {
+  overflow: scroll;
+}
+
+h1 {
+  border-style: hidden hidden solid hidden;
+  text-align: center;
+  font-size: 2rem;
+  font-family: Montserrat;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+  margin: 0px;
+  width: 100%;
+}
+
+h3 {
+  font-family: Montserrat;
+  font-weight: 400;
+  text-align: center;
+  margin: 10px;
+}
+
+p {
+  margin-left: 5px;
+}
+
+button {
+  color: #000000;
+}
+
+#ui {
+  display: none;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+#stat {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  cursor: pointer;
+  margin-left: 2.5rem;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+}
+
+#win {
+  display: none;
+}
+
+.cont {
+  padding: 10px;
+  margin: 10px auto;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #ffdd55 #ff99cc #ff99cc #ffdd55;
+  border-radius: 10px;
+}
+
+.close {
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 3rem;
+  font-family: Montserrat;
+  cursor: pointer;
+  border-width: 0;
+}
+
+#main {
+  border-style: hidden hidden solid hidden;
+  margin: auto;
+  display: flex;
+  align-items: center top;
+  flex-wrap: wrap-reverse;
+  max-width: 45rem;
+}
+
+#instructions {
+  display: box;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  padding: 1rem;
+  font-family: Montserrat;
+  max-width: 25rem;
+  height: 100%;
+}
+
+#end {
+  display: block;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  padding: 1rem;
+  font-family: Montserrat;
+  max-width: 25rem;
+  height: 100%;
+}
+
+#copy {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+  border-color: #ffdd55 #ff99cc #ff99cc #ffdd55;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Montserrat;
+  cursor: pointer;
+  margin: auto;
+  max-width: 15rem;
+}
+
+#countdown {
+  margin: 10px auto;
+  margin-bottom: 2rem;
+}
+
+#game-board {
+  margin: auto;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.letter-box {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #ffffff;
+  margin: 2px;
+  font-size: 2rem;
+  font-family: Montserrat;
+  height: 3.5rem;
+  width: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.filled-box {
+  border: 2px solid black;
+}
+
+.correct {
+  background-color: #77ff77;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #ffffff;
+  margin: 2px;
+  height: 1rem;
+  width: 1rem;
+}
+
+.wrong {
+  background-color: #ff99cc;
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #ffffff;
+  margin: 2px;
+  height: 1rem;
+  width: 1rem;
+}
+
+.green {
+  border-color: #ffffff;
+  background-color: #77ff77;
+  border-radius: 10px;
+}
+
+.yellow {
+  border-color: #ffffff;
+  background-color: #ffdd55;
+  border-radius: 20px;
+}
+
+.red {
+  border-color: #ffffff;
+  background-color: #ff99cc;
+  border-radius: 30px;
+}
+
+.letter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#keyboard-cont {
+  margin: auto;
+  margin-top: 0rem;
+  padding: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 35rem;
+}
+
+.keyboard-row {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 35rem;
+}
+
+.left {
+  border-style: solid;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #ffffff;
+  background-color: #ffdd55;
+  font-size: 1rem;
+  font-family: Montserrat;
+  margin: 0.2rem 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 10%;
+  height: 2rem;
+}
+
+.right {
+  border-style: solid;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #ffffff;
+  background-color: #ff99cc;
+  font-size: 1rem;
+  font-family: Montserrat;
+  margin: 0.2rem 0.1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 10%;
+  height: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 5px;
+  border-color: #ffdd55 #ff99cc #ff99cc #ffdd55;
+  cursor: pointer;
+  border-radius: 30px;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 6rem;
+}
